@@ -213,7 +213,12 @@ function renderSlots() {
     const i = +el.dataset.i;
     const id = slots[i];
     el.classList.toggle('human', !!id);
-    el.querySelector('em').textContent = id ? (phones.get(id)?.name || 'iPhone') : 'Bot';
+    const ph = id ? phones.get(id) : null;
+    const moving = ph && performance.now() - ph.last < 1000;
+    const text = !id ? 'Bot' : moving ? (ph.name || 'iPhone') : `${ph?.name || 'iPhone'} · brak ruchu, otwórz apkę i włącz aparat`;
+    const em = el.querySelector('em');
+    if (em.textContent !== text) em.textContent = text;
+    el.classList.toggle('stale', !!id && !moving);
   });
   serverOnline = true;
   ui.conn.textContent = '';
@@ -346,6 +351,18 @@ function startGame() {
   setScreen();
   clearInterval(calibTimer);
   calibTimer = setInterval(() => {
+    const now = performance.now();
+    const waiting = humans.filter(p => !p.rig.live(now));
+    humans.forEach(p => {
+      const el = ui.calibList.querySelector(`[data-i="${p.idx}"]`);
+      if (el) el.textContent = p.rig.live(now) ? p.cfg.name : `${p.cfg.name}: czekam na ruch telefonu`;
+    });
+    if (waiting.length) {
+      calibCount = 5;
+      ui.calibNum.textContent = '…';
+      pushPhoneUi();
+      return;
+    }
     calibCount--;
     ui.calibNum.textContent = calibCount > 0 ? calibCount : '✓';
     for (const p of humans) net.haptic(p.phoneId, calibCount > 0 ? 0.4 : 1, 0.8);
@@ -478,6 +495,7 @@ function tick(dt, now) {
   sfx.setCrowd(app === 'menu' ? 0.15 : 0.35 + match.excite * 0.6);
   updateFx(dt);
   updateScore();
+  if (app === 'menu') renderSlots();
   labels(now);
   drawCursors();
 }

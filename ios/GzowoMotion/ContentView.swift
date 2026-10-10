@@ -9,13 +9,16 @@ struct ContentView: View {
     @State private var ip = ""
     @State private var upSince: Date?
     @State private var upSent = false
+    @Environment(\.scenePhase) private var scenePhase
 
     private let background = Color(red: 0.06, green: 0.065, blue: 0.09)
 
     var body: some View {
         ZStack {
             background.ignoresSafeArea()
-            if !link.connected {
+            if let problem = tracker.problem {
+                cameraProblem(problem)
+            } else if !link.connected {
                 searching
             } else {
                 switch link.screen.mode {
@@ -27,6 +30,9 @@ struct ContentView: View {
         }
         .animation(.easeInOut(duration: 0.2), value: link.screen)
         .preferredColorScheme(.dark)
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active, tracker.problem != nil { tracker.start() }
+        }
         .onChange(of: tracker.screenUp) { _, up in
             if up {
                 let since = Date()
@@ -64,6 +70,34 @@ struct ContentView: View {
         }
         .padding(.horizontal, 24)
         .padding(.top, 12)
+    }
+
+    private func cameraProblem(_ text: String) -> some View {
+        VStack(spacing: 22) {
+            Spacer()
+            Image(systemName: "camera.fill")
+                .font(.system(size: 64, weight: .semibold))
+                .foregroundStyle(Color(hex: "#FF5A4E"))
+            Text("Potrzebny aparat")
+                .font(.system(size: 30, weight: .heavy, design: .rounded))
+            Text(text)
+                .font(.system(size: 16, weight: .medium))
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 30)
+            Button {
+                if let url = URL(string: UIApplication.openSettingsURLString) { UIApplication.shared.open(url) }
+            } label: {
+                Text("Otwórz Ustawienia")
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 18)
+                    .background(Color.white, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    .foregroundStyle(.black)
+            }
+            .padding(.horizontal, 28)
+            Spacer()
+        }
     }
 
     private var searching: some View {
@@ -137,6 +171,9 @@ struct ContentView: View {
                 .overlay(RoundedRectangle(cornerRadius: 36, style: .continuous).stroke(accent.opacity(0.6), lineWidth: 2))
                 .padding(16)
             VStack(spacing: 18) {
+                Text(trackingText)
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(.secondary)
                 Image(systemName: "hand.point.up.left.fill")
                     .font(.system(size: 64, weight: .semibold))
                     .foregroundStyle(accent)
@@ -159,6 +196,7 @@ struct ContentView: View {
 
     private var play: some View {
         VStack(spacing: 18) {
+            statusRow
             Spacer()
             Circle()
                 .fill(accent)

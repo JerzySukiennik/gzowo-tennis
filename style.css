@@ -106,6 +106,7 @@ p { color: var(--dim); font-size: calc(var(--u) * 1.15); line-height: 1.45; }
 .slot b { display: block; font-size: calc(var(--u) * 1.05); }
 .slot em { font-style: normal; color: var(--dim); font-size: calc(var(--u) * 0.95); }
 .slot.human em { color: var(--ball); }
+.slot.stale em { color: #ff8a7a; }
 
 .round {
   width: calc(var(--u) * 3);

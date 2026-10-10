@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gzowo Tennis</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="menu" class="screen on">
+  <div class="panel">
+    <h1>Gzowo <span>Tennis</span></h1>
+    <div class="players">
+      <div class="slot" data-i="0"><i></i><div><b>Gracz 1 · Czerwony</b><em>Bot</em></div></div>
+      <button id="swap" class="round" title="Zamień graczy">⇄</button>
+      <div class="slot" data-i="1"><i></i><div><b>Gracz 2 · Niebieski</b><em>Bot</em></div></div>
+    </div>
+    <div class="label">Kort</div>
+    <div id="courts" class="courts"></div>
+    <div class="label">Pomoc w bieganiu</div>
+    <div id="assist" class="segs"></div>
+    <button id="play" class="primary">Graj</button>
+    <p class="hint">Otwórz <b>Gzowo Motion</b> na iPhonie · celuj telefonem w telewizor i dotknij ekranu, albo klikaj myszką</p>
+  </div>
+</div>
+
+<div id="hud">
+  <div id="score">
+    <div class="side s0"><i></i><span class="nm"></span><b class="pts">0</b><em class="srv">●</em></div>
+    <div class="mid">tie-break do 7</div>
+    <div class="side s1"><em class="srv">●</em><b class="pts">0</b><span class="nm"></span><i></i></div>
+  </div>
+  <div id="labels"><div class="lab l0"></div><div class="lab l1"></div></div>
+  <div id="divider"></div>
+  <div id="callout"><b></b><span></span></div>
+</div>
+
+<div id="calib" class="screen">
+  <div class="panel narrow">
+    <div id="calibNum">5</div>
+    <h2>Kalibracja</h2>
+    <p>Stańcie obok siebie, ok. 2 m odstępu, przodem do telewizora. Trzymaj telefon pionowo przed sobą, ekranem do siebie, jak rączkę rakiety.</p>
+    <div id="calibList"></div>
+  </div>
+</div>
+
+<div id="pause" class="screen">
+  <div class="panel narrow">
+    <h2>Pauza</h2>
+    <button id="resume" class="primary">Wznów</button>
+    <button id="toMenu" class="ghost">Wyjdź do menu</button>
+  </div>
+</div>
+
+<div id="over" class="screen">
+  <div class="panel narrow">
+    <div id="overDot"></div>
+    <h2 id="overTitle">Wygrywa</h2>
+    <p id="overScore"></p>
+    <button id="again" class="primary">Rewanż</button>
+    <button id="overMenu" class="ghost">Menu</button>
+  </div>
+</div>
+
+<div id="cursors"></div>
+<div id="sound" class="chip">Kliknij, żeby włączyć dźwięk</div>
+<div id="conn" class="chip"></div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

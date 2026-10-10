@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B580F431373106A1C06A815 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21946E941E43C4B6DD862B7A /* Link.swift */; };
+		7591EA07252686CCF453A55E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DA60DD1F7BA4B27E1C620 /* ContentView.swift */; };
+		80DD7715EF8A3A6DA0C6D715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C5330F0C8153CCAC4DAD18 /* Assets.xcassets */; };
+		9246BBAB77D3F4D31334A41D /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC120B8C7D9FEB2B89B37663 /* Haptics.swift */; };
+		AB0D73FFAB8F9FC2A0349CEF /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3891F9EEC5293D2216D1B76A /* Tracker.swift */; };
+		B4BC953B5E46E80162D4E143 /* GzowoMotionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E06902015D4D3B90307189 /* GzowoMotionApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A8BE2FEA7706B358A77F46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		21946E941E43C4B6DD862B7A /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		3891F9EEC5293D2216D1B76A /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		8509E2580DD2AF5DDCA992EF /* GzowoMotion.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GzowoMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E06902015D4D3B90307189 /* GzowoMotionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GzowoMotionApp.swift; sourceTree = "<group>"; };
+		92C5330F0C8153CCAC4DAD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6DA60DD1F7BA4B27E1C620 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC120B8C7D9FEB2B89B37663 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		06B1C8276F6504FEB77E5BA1 = {
+			isa = PBXGroup;
+			children = (
+				BF313A2B87978827D8E145B7 /* GzowoMotion */,
+				7DCC291EFB6304F6AB58DB89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DCC291EFB6304F6AB58DB89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8509E2580DD2AF5DDCA992EF /* GzowoMotion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF313A2B87978827D8E145B7 /* GzowoMotion */ = {
+			isa = PBXGroup;
+			children = (
+				92C5330F0C8153CCAC4DAD18 /* Assets.xcassets */,
+				AF6DA60DD1F7BA4B27E1C620 /* ContentView.swift */,
+				87E06902015D4D3B90307189 /* GzowoMotionApp.swift */,
+				BC120B8C7D9FEB2B89B37663 /* Haptics.swift */,
+				0A8BE2FEA7706B358A77F46B /* Info.plist */,
+				21946E941E43C4B6DD862B7A /* Link.swift */,
+				3891F9EEC5293D2216D1B76A /* Tracker.swift */,
+			);
+			path = GzowoMotion;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A7CAFBF59FBB7C8AB89D7C1 /* GzowoMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82845E6FBD7C67952EAF7A43 /* Build configuration list for PBXNativeTarget "GzowoMotion" */;
+			buildPhases = (
+				C0D922603507561B2DB08B57 /* Sources */,
+				25C32F3784C464B57782FA29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GzowoMotion;
+			packageProductDependencies = (
+			);
+			productName = GzowoMotion;
+			productReference = 8509E2580DD2AF5DDCA992EF /* GzowoMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34A88451180390E11731A35C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3A7CAFBF59FBB7C8AB89D7C1 = {
+						DevelopmentTeam = Z4U8BM63J7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 93D8A59F58DF329167FAA727 /* Build configuration list for PBXProject "GzowoMotion" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 06B1C8276F6504FEB77E5BA1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7DCC291EFB6304F6AB58DB89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A7CAFBF59FBB7C8AB89D7C1 /* GzowoMotion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25C32F3784C464B57782FA29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DD7715EF8A3A6DA0C6D715 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0D922603507561B2DB08B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7591EA07252686CCF453A55E /* ContentView.swift in Sources */,
+				B4BC953B5E46E80162D4E143 /* GzowoMotionApp.swift in Sources */,
+				9246BBAB77D3F4D31334A41D /* Haptics.swift in Sources */,
+				1B580F431373106A1C06A815 /* Link.swift in Sources */,
+				AB0D73FFAB8F9FC2A0349CEF /* Tracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		501AD6F1AB43BE06C227881A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5D3A29E50466AD6879EFC7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4U8BM63J7;
+				INFOPLIST_FILE = GzowoMotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.gzowo.motion;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		94F02BC468026F9511ED83AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4U8BM63J7;
+				INFOPLIST_FILE = GzowoMotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.gzowo.motion;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DB63517A78F9468D6235E99F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82845E6FBD7C67952EAF7A43 /* Build configuration list for PBXNativeTarget "GzowoMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D3A29E50466AD6879EFC7CB /* Debug */,
+				94F02BC468026F9511ED83AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93D8A59F58DF329167FAA727 /* Build configuration list for PBXProject "GzowoMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB63517A78F9468D6235E99F /* Debug */,
+				501AD6F1AB43BE06C227881A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34A88451180390E11731A35C /* Project object */;
+}

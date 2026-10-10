@@ -1,0 +1,33 @@
+name: GzowoMotion
+options:
+  bundleIdPrefix: fun.gzowo
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  GzowoMotion:
+    type: application
+    platform: iOS
+    sources:
+      - GzowoMotion
+    info:
+      path: GzowoMotion/Info.plist
+      properties:
+        CFBundleDisplayName: Gzowo Motion
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UIStatusBarHidden: true
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIRequiredDeviceCapabilities: [arkit]
+        NSCameraUsageDescription: "Kamera śledzi, gdzie trzymasz telefon, żeby gra widziała twoje ruchy."
+        NSLocalNetworkUsageDescription: "Telefon łączy się z grą na Macu w tej samej sieci Wi-Fi."
+        NSBonjourServices: [_gzmotion._tcp]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fun.gzowo.motion
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: Z4U8BM63J7
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

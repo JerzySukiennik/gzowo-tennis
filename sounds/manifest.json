@@ -1,0 +1,52 @@
+{
+ "hit": [
+  "hit_338122_0.mp3",
+  "hit_338122_1.mp3",
+  "hit_338122_2.mp3",
+  "hit_338122_3.mp3",
+  "hit_338122_4.mp3",
+  "hit_338122_5.mp3",
+  "hit_457039_0.mp3",
+  "hit_710041_0.mp3"
+ ],
+ "serve": [
+  "serve_662266_0.mp3",
+  "serve_662266_1.mp3",
+  "serve_662266_2.mp3",
+  "serve_662266_3.mp3",
+  "serve_439340_0.mp3",
+  "serve_439340_1.mp3",
+  "serve_439340_2.mp3",
+  "serve_439340_3.mp3",
+  "serve_439340_4.mp3",
+  "serve_439340_5.mp3"
+ ],
+ "bounce": [
+  "bounce_533410_0.mp3",
+  "bounce_533410_1.mp3",
+  "bounce_533410_2.mp3",
+  "bounce_533410_3.mp3",
+  "bounce_533410_4.mp3",
+  "bounce_394355_0.mp3",
+  "bounce_394355_1.mp3",
+  "bounce_394355_2.mp3",
+  "bounce_394355_3.mp3"
+ ],
+ "net": [
+  "net_788265_0.mp3"
+ ],
+ "applause": [
+  "applause_277021.mp3",
+  "applause_277020.mp3",
+  "applause_333404.mp3"
+ ],
+ "cheer": [
+  "cheer_397434.mp3"
+ ],
+ "ooh": [
+  "ooh_264499_0.mp3",
+  "ooh_264499_1.mp3",
+  "ooh_264499_2.mp3",
+  "ooh_264499_3.mp3"
+ ]
+}

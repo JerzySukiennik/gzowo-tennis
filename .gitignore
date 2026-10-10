@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+Niepotrzebne/build/
+Niepotrzebne/sound-raw/
+Niepotrzebne/*.png
+ios/GzowoMotion.xcodeproj/xcuserdata/
+ios/GzowoMotion.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcresult

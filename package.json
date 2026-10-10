@@ -1,0 +1,16 @@
+{
+  "name": "gzowo-tennis",
+  "version": "1.0.0",
+  "description": "Two-player motion tennis on one TV with iPhones as rackets (ARKit + three.js).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js 8792"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
